@@ -6,4 +6,4 @@ const firebaseConfig = {
     storageBucket: "airbnb-clone-322a9.appspot.com",
     messagingSenderId: "256972684541",
     appId: "1:256972684541:web:3932b7d2157e2933c41294"
-  };
+  };                
