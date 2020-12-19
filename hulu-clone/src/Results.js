@@ -3,30 +3,34 @@ import Axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import './Results.css';
 import VideoCard from './VideoCard';
-import axios from './axios'
+import axios from './axios';
+import FlipMove from "react-flip-move";
 import requests from './requests';
 
 
-function Results() {
+function Results({ selectedOption }) {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
     async function fetchData(){
-      const request = await axios.get(requests.fetchAnimation);
+      const request = await axios.get(selectedOption);
       setMovies(request.data.results);
-      return requests;
+      return request;
 
     }
 
     fetchData();
 
-  },[])
+  },[selectedOption]);
 
   return (
     <div className='results'>
-      {movies.map((movie)=>(
-          <VideoCard movie={movie} />
+        <FlipMove>
+        {movies.map((movie)=>(
+          <VideoCard key={movie.id} movie={movie} />
       ))}
+        </FlipMove>
+      
       
 
       
