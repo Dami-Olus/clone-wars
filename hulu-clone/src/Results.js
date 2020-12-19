@@ -12,7 +12,7 @@ function Results() {
 
   useEffect(() => {
     async function fetchData(){
-      const request = await axios.get(requests.fetchActionMovies);
+      const request = await axios.get(requests.fetchAnimation);
       setMovies(request.data.results);
       return requests;
 
