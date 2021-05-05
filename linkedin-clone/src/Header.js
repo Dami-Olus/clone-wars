@@ -31,7 +31,7 @@ function Header() {
    <HeaderOption Icon={BusinessCenterIcon} title="Jobs" />
    <HeaderOption Icon={ChatIcon} title="Messaging" />
    <HeaderOption Icon={NotificationsIcon} title="Notifications" />
-   <HeaderOption avatar="https://compassionate-leakey-e9b16b.netlify.app/immages/IG_Sonny.jpeg" title="me" />
+   <HeaderOption avatar="https://media-exp1.licdn.com/dms/image/C4E03AQHyjO2ULGrgYQ/profile-displayphoto-shrink_100_100/0/1605250333227?e=1623283200&v=beta&t=vWOc7TU1GfF3-Oo19N3XWzG6V-gt3oX2mR3bTCSV_C8" title="me" />
 </div> 
 
     </div>
