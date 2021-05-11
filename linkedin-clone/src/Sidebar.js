@@ -1,11 +1,12 @@
 import { Avatar } from '@material-ui/core'
 import React from 'react'
+import './Sidebar.css';
 
 function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebar__top">
-        <img src="" alt=""/>
+        <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-1.2.1&ixid=MXwxMjA3fDBBMHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHw%3D&w=1000&q=80" alt=""/>
         <Avatar className="sidebar__avatar" />
         <h2>Damola Olusakin</h2>
         <h4>damola.olusakin@gmail.com</h4>
