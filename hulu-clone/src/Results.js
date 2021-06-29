@@ -1,5 +1,5 @@
 import { Movie } from '@material-ui/icons';
-import Axios from 'axios';
+
 import React, { useEffect, useState } from 'react';
 import './Results.css';
 import VideoCard from './VideoCard';

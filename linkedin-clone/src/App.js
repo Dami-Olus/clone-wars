@@ -9,8 +9,11 @@ import Header from './Header';
 import Login from './Login';
 import Sidebar from './Sidebar';
 
+
 function App() {
-  const user = useSelector(selectUser)
+  const user = useSelector(selectUser);
+  
+  
 
   const dispatch = useDispatch()
   
@@ -30,8 +33,8 @@ function App() {
         //user is logged out
         dispatch(logout());
       }
-    })
-  }, [])
+    });
+  }, []);
 
   
 
@@ -40,7 +43,7 @@ function App() {
      
       <Header />
     
-        { user ? (
+        { user.counter.users? (
         <div className="app__body">
           <Sidebar />
           <Feed />

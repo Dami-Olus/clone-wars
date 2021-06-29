@@ -12,6 +12,7 @@ import { auth } from './firebase';
 import { logout } from './features/userSlice';
 
 function Header() {
+  
   const dispatch = useDispatch()
   const logoutOfApp = () => {
     dispatch(logout());
@@ -40,7 +41,10 @@ function Header() {
    <HeaderOption Icon={BusinessCenterIcon} title="Jobs" />
    <HeaderOption Icon={ChatIcon} title="Messaging" />
    <HeaderOption Icon={NotificationsIcon} title="Notifications" />
-   <HeaderOption avatar="https://media-exp1.licdn.com/dms/image/C4E03AQHyjO2ULGrgYQ/profile-displayphoto-shrink_100_100/0/1605250333227?e=1629936000&v=beta&t=F2KbLn-mPRZS7JYzlSTo9k_Lm0acDn7Zld2mHmiR00U" title="me" onClick={logoutOfApp} />
+   <HeaderOption 
+   avatar={true}
+   title="me" 
+  onClick={logoutOfApp} />
    
 </div> 
 
