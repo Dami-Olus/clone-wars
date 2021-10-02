@@ -1,0 +1,3 @@
+[submodule "uber-clone"]
+	path = uber-clone
+	url = https://github.com/Dami-Olus/clone-wars.git
